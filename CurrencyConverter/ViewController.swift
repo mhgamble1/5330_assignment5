@@ -18,11 +18,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func USD(_ sender: UITextField) {
+        
+    }
+    
+    @IBAction func EUR_switch(_ sender: UISwitch) {
+        
+    }
+    
+    @IBAction func JPY_switch(_ sender: UISwitch) {
+        
+    }
+    
+    @IBAction func GBP_switch(_ sender: UISwitch) {
+        
+    }
+    
+    @IBAction func AUD_switch(_ sender: UISwitch) {
+        
+    }
+    
     @IBAction func navigate(_ sender: UIButton) {
         let navigateController = NavigationViewController()
-        let navigateController.USD = USD;
-        let navigateController.EUR_switch = EUR_switch;
+
         self.present(navigateController, animated: true, completion: nil)
     }
     
