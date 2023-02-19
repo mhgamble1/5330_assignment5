@@ -13,6 +13,7 @@
 		CD4227E029A1255A00012BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4227DE29A1255A00012BF1 /* Main.storyboard */; };
 		CD4227E229A1255C00012BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4227E129A1255C00012BF1 /* Assets.xcassets */; };
 		CD4227E529A1255C00012BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4227E329A1255C00012BF1 /* LaunchScreen.storyboard */; };
+		CDB3881329A2934200AA354F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3881229A2934200AA354F /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CD4227E129A1255C00012BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4227E429A1255C00012BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD4227E629A1255C00012BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB3881229A2934200AA354F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CD4227D829A1255A00012BF1 /* AppDelegate.swift */,
 				CD4227DA29A1255A00012BF1 /* SceneDelegate.swift */,
 				CD4227DC29A1255A00012BF1 /* ViewController.swift */,
+				CDB3881229A2934200AA354F /* NavigationViewController.swift */,
 				CD4227DE29A1255A00012BF1 /* Main.storyboard */,
 				CD4227E129A1255C00012BF1 /* Assets.xcassets */,
 				CD4227E329A1255C00012BF1 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB3881329A2934200AA354F /* NavigationViewController.swift in Sources */,
 				CD4227DD29A1255A00012BF1 /* ViewController.swift in Sources */,
 				CD4227D929A1255A00012BF1 /* AppDelegate.swift in Sources */,
 				CD4227DB29A1255A00012BF1 /* SceneDelegate.swift in Sources */,

@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func navigate(_ sender: UIButton) {
+        let navigateController = NavigationViewController()
+        let navigateController.USD = USD;
+        let navigateController.EUR_switch = EUR_switch;
+        self.present(navigateController, animated: true, completion: nil)
+    }
+    
 }
 
