@@ -26,10 +26,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vVm-Yo-uCM">
-                                <rect key="frame" x="60" y="179" width="273" height="257"/>
+                                <rect key="frame" x="60" y="178.99999999999997" width="273" height="277.33333333333326"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuN-PS-FIG">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="20.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an integer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-3j-syX">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaU-cZ-dr0">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="33"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="273" height="33"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter USD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-dd-89F">
                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="33"/>
@@ -56,7 +67,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3y-L3-CVj">
-                                        <rect key="frame" x="0.0" y="33" width="273" height="31"/>
+                                        <rect key="frame" x="0.0" y="53.333333333333343" width="273" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-Dr-qer">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
@@ -73,7 +84,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqH-4C-jeu">
-                                        <rect key="frame" x="0.0" y="64" width="273" height="31"/>
+                                        <rect key="frame" x="0.0" y="84.333333333333314" width="273" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ca-3J-FiL">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
@@ -90,7 +101,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luk-Jj-hB5">
-                                        <rect key="frame" x="0.0" y="95" width="273" height="31"/>
+                                        <rect key="frame" x="0.0" y="115.33333333333331" width="273" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nru-dM-j6d">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
@@ -107,7 +118,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-of-cv9">
-                                        <rect key="frame" x="0.0" y="126" width="273" height="31"/>
+                                        <rect key="frame" x="0.0" y="146.33333333333331" width="273" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-hu-mn3">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
@@ -124,7 +135,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-Y2-8Ci">
-                                        <rect key="frame" x="0.0" y="157" width="273" height="100"/>
+                                        <rect key="frame" x="0.0" y="177.33333333333331" width="273" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWH-ok-R9l">
                                                 <rect key="frame" x="0.0" y="0.0" width="273" height="100"/>
@@ -134,8 +145,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Convert"/>
                                                 <connections>
-                                                    <action selector="ConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAK-5w-Vek"/>
-                                                    <action selector="Convert_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0is-jz-FDr"/>
+                                                    <action selector="Convert_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvt-yf-1ZF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -155,7 +165,8 @@
                     </view>
                     <connections>
                         <outlet property="AUD_switch" destination="qw0-yz-3BX" id="hW7-KI-gfL"/>
-                        <outlet property="EUR_switch" destination="ANy-Le-vSF" id="X6O-R6-mgs"/>
+                        <outlet property="EUR_switch" destination="3oS-5t-ND8" id="lUt-cy-YAR"/>
+                        <outlet property="Error_label" destination="XPl-3j-syX" id="EoR-TX-j7q"/>
                         <outlet property="GBP_switch" destination="uhU-6F-iRW" id="A3x-IH-neK"/>
                         <outlet property="JPY_switch" destination="ANy-Le-vSF" id="6nN-Rt-0NH"/>
                         <outlet property="USD" destination="OI3-9a-rXE" id="c4h-96-mjT"/>

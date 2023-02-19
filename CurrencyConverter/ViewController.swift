@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var USD: UITextField!
+    @IBOutlet weak var Error_label: UILabel!
     @IBOutlet weak var EUR_switch: UISwitch!
     @IBOutlet weak var JPY_switch: UISwitch!
     @IBOutlet weak var GBP_switch: UISwitch!
@@ -39,8 +40,41 @@ class ViewController: UIViewController {
         
     }
     
+    
     @IBAction func Convert_button(_ sender: UIButton) {
-        
+        // if USD is empty
+        if USD.text == "" {
+            return
+        }
+        // if no switches are on
+        if !EUR_switch.isOn && !JPY_switch.isOn && !GBP_switch.isOn && !AUD_switch.isOn {
+            return
+        }
+        // if USD is not an integer, make the text color of Error_label red
+        if Int(USD.text!) == nil {
+            Error_label.textColor = UIColor.red
+            return
+        } else {
+            print("reached here")
+            Error_label.textColor = UIColor.white
+            // for each switch that is on, convert USD to that currency
+            if EUR_switch.isOn {
+                let EUR = Double(USD.text!)! * 0.84
+                print("EUR: \(EUR)")
+            }
+            if JPY_switch.isOn {
+                let JPY = Double(USD.text!)! * 109.5
+                print("JPY: \(JPY)")
+            }
+            if GBP_switch.isOn {
+                let GBP = Double(USD.text!)! * 0.72
+                print("GBP: \(GBP)")
+            }
+            if AUD_switch.isOn {
+                let AUD = Double(USD.text!)! * 1.32
+                print("AUD: \(AUD)")
+            }
+        }
     }
 }
 
