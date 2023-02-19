@@ -55,25 +55,11 @@ class ViewController: UIViewController {
             Error_label.textColor = UIColor.red
             return
         } else {
-            print("reached here")
             Error_label.textColor = UIColor.white
-            // for each switch that is on, convert USD to that currency
-            if EUR_switch.isOn {
-                let EUR = Double(USD.text!)! * 0.84
-                print("EUR: \(EUR)")
-            }
-            if JPY_switch.isOn {
-                let JPY = Double(USD.text!)! * 109.5
-                print("JPY: \(JPY)")
-            }
-            if GBP_switch.isOn {
-                let GBP = Double(USD.text!)! * 0.72
-                print("GBP: \(GBP)")
-            }
-            if AUD_switch.isOn {
-                let AUD = Double(USD.text!)! * 1.32
-                print("AUD: \(AUD)")
-            }
+            // create an instance of conversionLogic
+            let conversionLogic = ConversionLogic()
+            // call the convertCurrency function
+            conversionLogic.convertCurrency(USD: Int(USD.text!)!, EUR: EUR_switch.isOn, JPY: JPY_switch.isOn, GBP: GBP_switch.isOn, AUD: AUD_switch.isOn)
         }
     }
 }
