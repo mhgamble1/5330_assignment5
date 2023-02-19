@@ -39,11 +39,8 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func navigate(_ sender: UIButton) {
-        let navigateController = NavigationViewController()
-
-        self.present(navigateController, animated: true, completion: nil)
+    @IBAction func Convert_button(_ sender: UIButton) {
+        
     }
-    
 }
 

@@ -134,7 +134,8 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Convert"/>
                                                 <connections>
-                                                    <action selector="navigate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ST-qD-bsk"/>
+                                                    <action selector="ConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAK-5w-Vek"/>
+                                                    <action selector="Convert_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0is-jz-FDr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -154,7 +155,6 @@
                     </view>
                     <connections>
                         <outlet property="AUD_switch" destination="qw0-yz-3BX" id="hW7-KI-gfL"/>
-                        <outlet property="Convert_button" destination="xWH-ok-R9l" id="7c6-Qi-6mG"/>
                         <outlet property="EUR_switch" destination="ANy-Le-vSF" id="X6O-R6-mgs"/>
                         <outlet property="GBP_switch" destination="uhU-6F-iRW" id="A3x-IH-neK"/>
                         <outlet property="JPY_switch" destination="ANy-Le-vSF" id="6nN-Rt-0NH"/>
