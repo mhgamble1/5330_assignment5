@@ -19,6 +19,8 @@ class ConversionView: UIViewController {
     @IBOutlet weak var GBP: UILabel!
     @IBOutlet weak var AUD: UILabel!
     
+    var USD_in = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

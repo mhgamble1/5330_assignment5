@@ -56,10 +56,11 @@ class ViewController: UIViewController {
             return
         } else {
             Error_label.textColor = UIColor.white
+            self.performSegue(withIdentifier: "toConversion", sender: self)
             // create an instance of conversionLogic
-            let conversionLogic = ConversionLogic()
-            // call the convertCurrency function
-            conversionLogic.convertCurrency(USD: Int(USD.text!)!, EUR: EUR_switch.isOn, JPY: JPY_switch.isOn, GBP: GBP_switch.isOn, AUD: AUD_switch.isOn)
+//            let conversionLogic = ConversionLogic()
+//            // call the convertCurrency function
+//            conversionLogic.convertCurrency(USD: Int(USD.text!)!, EUR: EUR_switch.isOn, JPY: JPY_switch.isOn, GBP: GBP_switch.isOn, AUD: AUD_switch.isOn)
         }
     }
 }
