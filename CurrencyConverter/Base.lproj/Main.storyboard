@@ -57,9 +57,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="USD:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="95w-j0-ktD"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -77,9 +74,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3oS-5t-ND8">
                                                 <rect key="frame" x="224" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="EUR_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="7xp-XS-Zve"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -94,9 +88,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANy-Le-vSF">
                                                 <rect key="frame" x="224" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="JPY_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="741-Pg-OE8"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -111,9 +102,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-6F-iRW">
                                                 <rect key="frame" x="224" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="GBP_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Ym-Zc-FPb"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -128,9 +116,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qw0-yz-3BX">
                                                 <rect key="frame" x="224" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="AUD_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="gKH-Yn-mPp"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -298,13 +283,13 @@
                     </view>
                     <connections>
                         <outlet property="AUD" destination="Dfo-4a-nCn" id="4zv-g6-ODF"/>
-                        <outlet property="AUD_stack" destination="XEB-OL-7Sd" id="Lje-Hz-q8P"/>
+                        <outlet property="AUD_label" destination="Iep-Um-mfA" id="4UT-BB-K4p"/>
                         <outlet property="EUR" destination="hSa-Fs-T9O" id="dHX-kZ-nuk"/>
-                        <outlet property="EUR_stack" destination="5AQ-Wp-Bb1" id="fDv-Bq-NIy"/>
+                        <outlet property="EUR_label" destination="FbP-v9-Iho" id="iOa-5i-kfj"/>
                         <outlet property="GBP" destination="dp5-xg-kqD" id="29n-Db-kLP"/>
-                        <outlet property="GBP_stack" destination="xSC-RK-gMB" id="Ydq-Iy-2rq"/>
+                        <outlet property="GBP_label" destination="d7Z-TV-cXm" id="9NB-hf-Cxc"/>
                         <outlet property="JPY" destination="CoR-Qv-vSF" id="qvv-qH-TBA"/>
-                        <outlet property="JPY_stack" destination="Z0a-To-5Fc" id="YEx-Ew-MAG"/>
+                        <outlet property="JPY_label" destination="XB7-4m-lIi" id="yHU-F2-rgW"/>
                         <outlet property="USD" destination="a09-rI-GrT" id="5w7-Tp-q5a"/>
                     </connections>
                 </viewController>

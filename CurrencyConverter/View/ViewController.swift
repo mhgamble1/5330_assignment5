@@ -14,35 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var JPY_switch: UISwitch!
     @IBOutlet weak var GBP_switch: UISwitch!
     @IBOutlet weak var AUD_switch: UISwitch!
-    @IBOutlet weak var Convert_button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-    
-    @IBAction func USD(_ sender: UITextField) {
-        
-    }
-    
-    @IBAction func EUR_switch(_ sender: UISwitch) {
-        
-    }
-    
-    @IBAction func JPY_switch(_ sender: UISwitch) {
-        
-    }
-    
-    @IBAction func GBP_switch(_ sender: UISwitch) {
-        
-    }
-    
-    @IBAction func AUD_switch(_ sender: UISwitch) {
-        
-    }
-    
     
     @IBAction func Convert_button(_ sender: UIButton) {
-        // if USD is empty
         if USD.text == "" {
             return
         }
@@ -50,7 +26,6 @@ class ViewController: UIViewController {
         if !EUR_switch.isOn && !JPY_switch.isOn && !GBP_switch.isOn && !AUD_switch.isOn {
             return
         }
-        // if USD is not an integer, make the text color of Error_label red
         if Int(USD.text!) == nil {
             Error_label.textColor = UIColor.red
             return
@@ -61,8 +36,6 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
         if segue.identifier == "toConversion" {
             let navigation = segue.destination as! ConversionView
             navigation.USD_in = Int(USD.text!)!
