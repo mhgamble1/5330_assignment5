@@ -9,6 +9,16 @@ import UIKit
 
 class ConversionView: UIViewController {
 
+    @IBOutlet weak var EUR_stack: UIStackView!
+    @IBOutlet weak var JPY_stack: UIStackView!
+    @IBOutlet weak var GBP_stack: UIStackView!
+    @IBOutlet weak var AUD_stack: UIStackView!
+    @IBOutlet weak var USD: UILabel!
+    @IBOutlet weak var EUR: UILabel!
+    @IBOutlet weak var JPY: UILabel!
+    @IBOutlet weak var GBP: UILabel!
+    @IBOutlet weak var AUD: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

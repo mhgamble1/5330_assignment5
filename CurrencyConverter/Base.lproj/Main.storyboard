@@ -170,6 +170,7 @@
                         <outlet property="GBP_switch" destination="uhU-6F-iRW" id="A3x-IH-neK"/>
                         <outlet property="JPY_switch" destination="ANy-Le-vSF" id="6nN-Rt-0NH"/>
                         <outlet property="USD" destination="OI3-9a-rXE" id="c4h-96-mjT"/>
+                        <segue destination="EYk-Mg-VDI" kind="presentation" identifier="toConversion" id="eFZ-nk-l1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,7 +182,7 @@
             <objects>
                 <viewController id="EYk-Mg-VDI" customClass="ConversionView" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Luh-eE-poI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a09-rI-GrT">
@@ -191,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="77n-fE-0ZC">
-                                <rect key="frame" x="0.0" y="546.66666666666663" width="393" height="171.33333333333337"/>
+                                <rect key="frame" x="0.0" y="511.66666666666669" width="393" height="171.33333333333331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AQ-Wp-Bb1">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
@@ -214,7 +215,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0a-To-5Fc">
-                                        <rect key="frame" x="0.0" y="50.333333333333371" width="393" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="50.333333333333314" width="393" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XB7-4m-lIi">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="20.333333333333332"/>
@@ -234,7 +235,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSC-RK-gMB">
-                                        <rect key="frame" x="0.0" y="100.66666666666674" width="393" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="100.66666666666669" width="393" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7Z-TV-cXm">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="20.333333333333332"/>
@@ -254,7 +255,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEB-OL-7Sd">
-                                        <rect key="frame" x="0.0" y="151" width="393" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="150.99999999999994" width="393" height="20.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-Um-mfA">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="20.333333333333332"/>
@@ -295,6 +296,17 @@
                             <constraint firstItem="77n-fE-0ZC" firstAttribute="leading" secondItem="j0E-Jh-s0t" secondAttribute="leading" id="rwh-R3-57z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AUD" destination="Dfo-4a-nCn" id="4zv-g6-ODF"/>
+                        <outlet property="AUD_stack" destination="XEB-OL-7Sd" id="Lje-Hz-q8P"/>
+                        <outlet property="EUR" destination="hSa-Fs-T9O" id="dHX-kZ-nuk"/>
+                        <outlet property="EUR_stack" destination="5AQ-Wp-Bb1" id="fDv-Bq-NIy"/>
+                        <outlet property="GBP" destination="dp5-xg-kqD" id="29n-Db-kLP"/>
+                        <outlet property="GBP_stack" destination="xSC-RK-gMB" id="Ydq-Iy-2rq"/>
+                        <outlet property="JPY" destination="CoR-Qv-vSF" id="qvv-qH-TBA"/>
+                        <outlet property="JPY_stack" destination="Z0a-To-5Fc" id="YEx-Ew-MAG"/>
+                        <outlet property="USD" destination="a09-rI-GrT" id="5w7-Tp-q5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sme-TG-7g0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
