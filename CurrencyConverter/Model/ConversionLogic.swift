@@ -15,7 +15,7 @@ struct ExchangeRates {
 }
 
 struct ConversionLogic {
-  let exchangeRates = ExchangeRates(EUR: 0.84, JPY: 109.5, GBP: 0.72, AUD: 1.32)
+  let exchangeRates = ExchangeRates(EUR: 0.94, JPY: 134.36, GBP: 0.83, AUD: 1.45)
   func convertCurrency(USD: Int, EUR: Bool, JPY: Bool, GBP: Bool, AUD: Bool) -> [String: Double] {
     var exchangeRates = [String: Double]()
     if EUR {
