@@ -14,6 +14,7 @@
 		CD4227E229A1255C00012BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4227E129A1255C00012BF1 /* Assets.xcassets */; };
 		CD4227E529A1255C00012BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4227E329A1255C00012BF1 /* LaunchScreen.storyboard */; };
 		CDB3881629A2DFFC00AA354F /* ConversionLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3881529A2DFFC00AA354F /* ConversionLogic.swift */; };
+		CDB3881929A2F7EF00AA354F /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3881829A2F7EF00AA354F /* ConversionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CD4227E429A1255C00012BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD4227E629A1255C00012BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB3881529A2DFFC00AA354F /* ConversionLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionLogic.swift; sourceTree = "<group>"; };
+		CDB3881829A2F7EF00AA354F /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4227DC29A1255A00012BF1 /* ViewController.swift */,
+				CDB3881829A2F7EF00AA354F /* ConversionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB3881629A2DFFC00AA354F /* ConversionLogic.swift in Sources */,
+				CDB3881929A2F7EF00AA354F /* ConversionView.swift in Sources */,
 				CD4227DD29A1255A00012BF1 /* ViewController.swift in Sources */,
 				CD4227D929A1255A00012BF1 /* AppDelegate.swift in Sources */,
 				CD4227DB29A1255A00012BF1 /* SceneDelegate.swift in Sources */,
