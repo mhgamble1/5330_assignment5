@@ -57,10 +57,19 @@ class ViewController: UIViewController {
         } else {
             Error_label.textColor = UIColor.white
             self.performSegue(withIdentifier: "toConversion", sender: self)
-            // create an instance of conversionLogic
-//            let conversionLogic = ConversionLogic()
-//            // call the convertCurrency function
-//            conversionLogic.convertCurrency(USD: Int(USD.text!)!, EUR: EUR_switch.isOn, JPY: JPY_switch.isOn, GBP: GBP_switch.isOn, AUD: AUD_switch.isOn)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "toConversion" {
+            let navigation = segue.destination as! ConversionView
+            navigation.USD_in = Int(USD.text!)!
+            navigation.EUR_switch = EUR_switch.isOn
+            navigation.JPY_switch = JPY_switch.isOn
+            navigation.GBP_switch = GBP_switch.isOn
+            navigation.AUD_switch = AUD_switch.isOn
         }
     }
 }
